@@ -1,0 +1,16 @@
+
+version: '3.8'
+
+services:
+  container2:
+    image: bind
+    container_name: container2
+    volumes:
+      - apivolume:/myapp/
+    ports:
+      - "5177:5173"
+    command: "npm run dev"
+
+volumes:
+  apivolume:
+

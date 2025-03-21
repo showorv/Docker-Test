@@ -5,7 +5,7 @@ function App() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts/2')
+    axios.get('https://jsonplaceholder.typicode.com/posts/4')
       .then(response => setPost(response.data))
       .catch(error => console.error('Error:', error));
   }, []);
